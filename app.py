@@ -39,4 +39,6 @@ def main():
         st.write('Total Count for %s: '%choice1, str(count[choice1]))
         st.write('Total Count for %s: '%choice2, str(count[choice2]))
 
+        st.write(plt.pie(count, labels=options))
+
 main()
