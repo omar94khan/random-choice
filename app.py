@@ -33,7 +33,6 @@ def main():
         options = [choice1,choice2]
         
         score = pd.DataFrame([np.random.choice(options, p=[0.5,0.5]) for i in range(0,flips)])
-        st.write(score)
 
         count = score.value_counts()
 
