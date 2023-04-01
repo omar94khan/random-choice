@@ -37,7 +37,7 @@ def main():
 
         count = score.value_counts()
 
-        st.write('Total Count for %s: '%choice1, str(count[0]))
-        st.write('Total Count for %s: '%choice2, str(count[1]))
+        st.write('Total Count for %s: '%choice1, str(count[choice1]))
+        st.write('Total Count for %s: '%choice2, str(count[choice2]))
 
 main()
