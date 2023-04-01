@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def main():
     st.title('Random Choice')
     
-    options = []
+    # options = []
 
     choice1 = str(st.text_input('Choice 1'))
     choice2 = str(st.text_input('Choice 2'))
@@ -30,7 +30,7 @@ def main():
 
     go = st.button("Let's begin")    
     if go:
-        options = options.append([choice1,choice2])
+        options = [choice1,choice2]
         score = pd.DataFrame([np.random.choice(options) for i in range(0,flips)])
 
         st.write(score.value_counts())
