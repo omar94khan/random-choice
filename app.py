@@ -31,9 +31,10 @@ def main():
     go = st.button("Let's begin")    
     if go:
         options = [choice1,choice2]
-        st.write(options)
+        
         score = pd.DataFrame([np.random.choice(options) for i in range(0,flips)])
-
+        st.write(score)
+        
         st.write(score.value_counts())
 
 main()
