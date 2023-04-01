@@ -8,25 +8,25 @@ def main():
     
     options = []
 
-    choice1 = st.text_input('Choice 1')
-    choice2 = st.text_input('Choice 2')
+    choice1 = str(st.text_input('Choice 1'))
+    choice2 = str(st.text_input('Choice 2'))
 
-    add = st.button('Add Choice')
-    if add:
-        choice3 = st.text_input('Choice 3')
-        options = options.append(choice3)
+    # add = st.button('Add Choice')
+    # if add:
+    #     choice3 = st.text_input('Choice 3')
+    #     options = options.append(choice3)
 
-        add2 = st.button('Add Choice')
-        if add2:
-            choice4 = st.text_input('Choice 4')
-            options = options.append(choice4)
+    #     add2 = st.button('Add Choice')
+    #     if add2:
+    #         choice4 = st.text_input('Choice 4')
+    #         options = options.append(choice4)
 
-            add3 = st.button('Add Choice')
-            if add3:
-                choice5 = st.text_input('Choice 5')
-                options = options.append(choice5)
+    #         add3 = st.button('Add Choice')
+    #         if add3:
+    #             choice5 = st.text_input('Choice 5')
+    #             options = options.append(choice5)
     
-    flips = st.number_input('Number of total flips', min_value=1, max_value=1000000, step=1)
+    flips = int(st.number_input('Number of total flips', min_value=1, max_value=1000000, step=1))
 
     go = st.button("Let's begin")    
     if go:
