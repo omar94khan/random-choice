@@ -39,6 +39,9 @@ def main():
         st.write('Total Count for %s: '%choice1, str(count[choice1]))
         st.write('Total Count for %s: '%choice2, str(count[choice2]))
 
-        st.pyplot(plt.pie(x=count, labels=options))
+        fig, ax = plt.subplots()
+        ax.pie(x=count, labels=options)
+
+        st.pyplot(fig)
 
 main()
