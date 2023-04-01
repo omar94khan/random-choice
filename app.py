@@ -34,7 +34,7 @@ def main():
         
         score = pd.DataFrame([np.random.choice(options, p=[0.5,0.5]) for i in range(0,flips)])
 
-        count = score.value_counts()
+        count = score.value_counts(sort=False)
 
         st.write('Total Count for %s: '%choice1, str(count[choice1]))
         st.write('Total Count for %s: '%choice2, str(count[choice2]))
