@@ -31,9 +31,9 @@ def main():
     flips = st.number_input('Number of total flips', min_value=1, max_value=1000000, step=1)
 
     
+    if len(options) >=2:
+        score = pd.DataFrame([np.random.choice(options) for i in range(0,flips)])
 
-    score = pd.DataFrame([np.random.choice(options) for i in range(0,flips)])
-
-    st.write(score.value_counts())
+        st.write(score.value_counts())
 
 main()
